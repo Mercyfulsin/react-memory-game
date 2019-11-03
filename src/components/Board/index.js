@@ -22,7 +22,7 @@ class Board extends Component {
             console.log("GoodJob");
             this.setState({
                 score: score + 1,
-                topScore: score > topScore ? score : topScore,
+                topScore: score + 1 > topScore ? score + 1 : topScore,
                 friends: this.shuffle(friends)
             });
             ids.push(id);
