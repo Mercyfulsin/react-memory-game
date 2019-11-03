@@ -7,6 +7,8 @@ function Header(props) {
       <a className="navbar-brand" href="/">
         Memory Game!
       </a>
+      <h5>Score: {props.score}</h5>
+      <h5>Hi-Score: {props.highscore}</h5>
     </nav>
   );
 }

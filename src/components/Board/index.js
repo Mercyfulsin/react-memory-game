@@ -35,22 +35,21 @@ class Board extends Component {
     shuffle = array => {
         let count = array.length, temp, rand;
         while (count) {
-          // Pick a remaining element…
-          rand = Math.floor(Math.random() * count--);
-          // And swap it with the current element.
-          temp = array[rand];
-          array[count] = array[rand];
-          array[rand] = temp;
+            // Pick a remaining element…
+            rand = Math.floor(Math.random() * count--);
+            // And swap it with the current element.
+            temp = array[count];
+            array[count] = array[rand];
+            array[rand] = temp;
         }
         return array;
-      }
+    };
 
     render() {
         return (
             <div>
-                <Header />
+                <Header score={this.state.score} highscore={this.state.topScore} />
                 <Wrapper>
-                    {console.log(`Current Score: ${this.state.score} and TopScore: ${this.state.topScore}`)}
                     {this.state.friends.map(friend => (
                         <FriendCard
                             id={friend.id}
