@@ -5,7 +5,7 @@ function Footer(props){
         return (
             
          <nav className="navbar fixed-bottom footer">
-             <span>Clicky Game</span>
+             <a {...props}> Github Source</a>
          </nav>
         )
     

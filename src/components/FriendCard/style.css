@@ -21,3 +21,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.card:hover{
+  border-color: blue;
+}
+
+.card>.img-container>img:hover {
+  width: 50%;
+  
+}

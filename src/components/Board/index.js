@@ -58,9 +58,8 @@ class Board extends Component {
                             handleClick={this.handleClick}
                         />
                     ))}
-
                 </Wrapper>
-                <Footer>2019</Footer>
+                <Footer className="fab fa-github-square" style={{fontSize: '30px', textDecoration: 'none', color: 'black', textAlign: 'center', flex: 1}} href={'https://github.com/Mercyfulsin/react-memory-game'} target={'_blank'} />
             </div>
         )
     }
